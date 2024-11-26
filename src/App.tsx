@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './contexts/AuthContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
@@ -21,21 +22,23 @@ function Home() {
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-purple-50">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/get-started" element={<GetStarted />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/impact-stories" element={<ImpactStories />} />
-          <Route path="/non-profits" element={<Nonprofits />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <div className="min-h-screen bg-purple-50">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/get-started" element={<GetStarted />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/impact-stories" element={<ImpactStories />} />
+            <Route path="/non-profits" element={<Nonprofits />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </AuthProvider>
   );
 }
 

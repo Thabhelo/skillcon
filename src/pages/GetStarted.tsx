@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export default function GetStarted() {
+  const navigate = useNavigate();
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState<{
     role: string;
@@ -99,14 +101,14 @@ export default function GetStarted() {
               <h2 className="text-2xl font-bold text-gray-800 mb-6">Almost there!</h2>
               <div className="space-y-4 mb-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="availability" className="block text-sm font-medium text-gray-700 mb-1">
                     Availability
                   </label>
                   <select
+                    id="availability"
                     value={formData.availability}
                     onChange={(e) => setFormData({ ...formData, availability: e.target.value })}
                     className="w-full p-2 border-2 border-purple-200 rounded-lg"
-                    aria-label="Select availability"
                   >
                     <option value="">Select availability</option>
                     <option value="0-5">0-5 hours/week</option>
@@ -116,7 +118,7 @@ export default function GetStarted() {
                 </div>
               </div>
               <button
-                onClick={() => window.location.href = '/dashboard'}
+                onClick={() => navigate('/dashboard')}
                 className="w-full bg-purple-500 text-white py-3 rounded-lg hover:bg-purple-600 transition-colors flex items-center justify-center"
               >
                 Complete Profile <ArrowRight className="ml-2 h-5 w-5" />

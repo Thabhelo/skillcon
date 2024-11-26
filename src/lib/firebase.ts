@@ -4,12 +4,12 @@ import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "skillcon-org.firebaseapp.com",
-  projectId: "skillcon-org",
-  storageBucket: "skillcon-org.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCgvc2gM6PIeNWXdYyzZnrVoFBnlyzpCNQ",
+  authDomain: "skillcon-5a5fc.firebaseapp.com",
+  projectId: "skillcon-5a5fc",
+  storageBucket: "skillcon-5a5fc.firebasestorage.app",
+  messagingSenderId: "659795856207",
+  appId: "1:659795856207:web:49ee581185a1b97564533a"
 };
 
 const app = initializeApp(firebaseConfig);

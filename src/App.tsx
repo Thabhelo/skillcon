@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -6,6 +5,8 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import GetStarted from './pages/GetStarted';
 import Projects from './pages/Projects';
+import ImpactStories from './pages/ImpactStories';
+import Nonprofits from './pages/Nonprofits';  
 
 function Home() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/get-started" element={<GetStarted />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/impact-stories" element={<ImpactStories />} />
+          <Route path="/non-profits" element={<Nonprofits />} />
         </Routes>
         <Footer />
       </div>

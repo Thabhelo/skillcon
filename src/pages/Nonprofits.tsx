@@ -1,7 +1,6 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Building2, Users, BarChart, Zap, ArrowRight, Link } from 'lucide-react';
+import { Users, BarChart, Zap, ArrowRight } from 'lucide-react';
 import { Link as RouterLink } from 'react-router-dom';
 
 export default function Nonprofits() {

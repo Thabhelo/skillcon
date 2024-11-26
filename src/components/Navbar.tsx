@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Heart, Search, UserCircle } from 'lucide-react';
+import { Menu, X, Heart, Search } from 'lucide-react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -17,14 +17,14 @@ export default function Navbar() {
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link to="/" className="text-white hover:bg-purple-400 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
                 <Link to="/projects" className="text-white hover:bg-purple-400 px-3 py-2 rounded-md text-sm font-medium">Find Projects</Link>
-                <Link to="/nonprofits" className="text-white hover:bg-purple-400 px-3 py-2 rounded-md text-sm font-medium">For Nonprofits</Link>
-                <Link to="/impact" className="text-white hover:bg-purple-400 px-3 py-2 rounded-md text-sm font-medium">Impact Stories</Link>
+                <Link to="/non-profits" className="text-white hover:bg-purple-400 px-3 py-2 rounded-md text-sm font-medium">For Nonprofits</Link>
+                <Link to="/impact-stories" className="text-white hover:bg-purple-400 px-3 py-2 rounded-md text-sm font-medium">Impact Stories</Link>
               </div>
             </div>
           </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
-              <button className="p-1 rounded-full text-white hover:bg-purple-400 focus:outline-none">
+              <button className="p-1 rounded-full text-white hover:bg-purple-400 focus:outline-none" title="Search">
                 <Search className="h-6 w-6" />
               </button>
               <Link to="/get-started" className="ml-4 px-4 py-2 rounded-md text-white bg-purple-600 hover:bg-purple-700">

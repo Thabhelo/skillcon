@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
 export default function GetStarted() {
   const [step, setStep] = useState(1);
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<{
+    role: string;
+    skills: string[];
+    interests: string[];
+    availability: string;
+  }>({
     role: '',
     skills: [],
     interests: [],
@@ -101,6 +106,7 @@ export default function GetStarted() {
                     value={formData.availability}
                     onChange={(e) => setFormData({ ...formData, availability: e.target.value })}
                     className="w-full p-2 border-2 border-purple-200 rounded-lg"
+                    aria-label="Select availability"
                   >
                     <option value="">Select availability</option>
                     <option value="0-5">0-5 hours/week</option>

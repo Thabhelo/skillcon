@@ -6,7 +6,8 @@ import Features from './components/Features';
 import GetStarted from './pages/GetStarted';
 import Projects from './pages/Projects';
 import ImpactStories from './pages/ImpactStories';
-import Nonprofits from './pages/Nonprofits';  
+import Nonprofits from './pages/Nonprofits'; 
+import AboutUs from './pages/AboutUs';
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/impact-stories" element={<ImpactStories />} />
           <Route path="/non-profits" element={<Nonprofits />} />
+          <Route path="/about" element={<AboutUs />} />
         </Routes>
         <Footer />
       </div>

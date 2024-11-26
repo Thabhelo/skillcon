@@ -32,7 +32,7 @@ body{
     ,transparent,#00eeff,#00eeff,#00eeff);
     z-index: 1;
     transform-origin: bottom right;
-    animation: animate 6s linear infinite;
+    animation: animate 4s linear infinite;
 }
 .box::after{
     content: '';

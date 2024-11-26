@@ -1,4 +1,3 @@
-import React from 'react';
 import { Brain, Users, BarChart, Globe } from 'lucide-react';
 
 export default function Features() {
@@ -39,7 +38,7 @@ export default function Features() {
         </div>
 
         <div className="mt-10">
-          <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+          <div className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-4 gap-12">
             {features.map((feature) => (
               <div key={feature.name} className="relative">
                 <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white">

@@ -1,11 +1,10 @@
-import React from 'react';
 import { ArrowRight, Users, Award, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-purple-300 via-purple-200 to-purple-300">
+    <div className="relative overflow-hidden bg-gradient-to-br from-purple-300 via-purple-200 to-purple-300 lg:py-24">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -13,22 +12,11 @@ export default function Hero() {
         className="absolute inset-0"
       >
         <div className="absolute inset-0 bg-gradient-to-r from-purple-300/30 to-purple-200/30 animate-gradient"></div>
-        <motion.div
-          animate={{
-            background: [
-              "linear-gradient(to right, transparent, rgba(167, 139, 250, 0.1), transparent)",
-              "linear-gradient(to right, transparent, rgba(167, 139, 250, 0.2), transparent)",
-              "linear-gradient(to right, transparent, rgba(167, 139, 250, 0.1), transparent)",
-            ],
-          }}
-          transition={{ duration: 3, repeat: Infinity }}
-          className="absolute top-0 left-0 right-0 h-px"
-        ></motion.div>
       </motion.div>
-      
-      <div className="max-w-7xl mx-auto relative">
+
+      <div className="container mx-auto relative px-4">
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32">
-          <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+          <main className="mx-auto max-w-7xl sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -53,16 +41,16 @@ export default function Hero() {
                   With Meaningful Impact
                 </motion.span>
               </h1>
-              
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7 }}
                 className="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               >
-                Join SkillCon to match your expertise with nonprofits that need your help. Our AI-powered platform finds the perfect opportunities for your skills and passion.
+                Join SkillCon to match your expertise with nonprofits that need
+                your help. Our AI-powered platform finds the perfect
+                opportunities for your skills and passion.
               </motion.p>
-              
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -89,12 +77,12 @@ export default function Hero() {
               </motion.div>
             </motion.div>
           </main>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.1 }}
-            className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3 lg:grid-cols-3"
+            className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3 lg:grid-cols-3 lg:gap-12"
           >
             <motion.div
               whileHover={{ scale: 1.05 }}

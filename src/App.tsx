@@ -8,6 +8,7 @@ import Projects from './pages/Projects';
 import ImpactStories from './pages/ImpactStories';
 import Nonprofits from './pages/Nonprofits'; 
 import AboutUs from './pages/AboutUs';
+import Login from './pages/Login';
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/impact-stories" element={<ImpactStories />} />
           <Route path="/non-profits" element={<Nonprofits />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </div>

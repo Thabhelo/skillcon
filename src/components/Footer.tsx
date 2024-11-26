@@ -1,4 +1,3 @@
-import React from 'react';
 import { Heart, Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -20,8 +19,8 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link to="/about" className="text-white hover:text-purple-200">About Us</Link></li>
               <li><Link to="/projects" className="text-white hover:text-purple-200">Browse Projects</Link></li>
-              <li><Link to="/nonprofits" className="text-white hover:text-purple-200">For Nonprofits</Link></li>
-              <li><Link to="/impact" className="text-white hover:text-purple-200">Impact Stories</Link></li>
+              <li><Link to="/non-profits" className="text-white hover:text-purple-200">For Nonprofits</Link></li>
+              <li><Link to="/impact-stories" className="text-white hover:text-purple-200">Impact Stories</Link></li>
             </ul>
           </div>
           

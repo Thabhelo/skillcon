@@ -12,7 +12,7 @@ export default function ImpactStories() {
     {
       title: "Tech Skills for Change",
       organization: "Digital Literacy Foundation",
-      volunteer: "Sarah Chen",
+      volunteer: "Jaylen Haynes",
       impact: "Taught 200+ seniors essential digital skills",
       image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       quote: "Seeing seniors connect with their families online for the first time was incredibly rewarding."
